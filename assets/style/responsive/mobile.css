@@ -1,0 +1,62 @@
+@media screen and (max-width: 768px) {
+    .nav-container ul {
+      justify-content: center;
+    }
+
+    .intro {
+        margin-top: 20px;
+    }
+
+    .intro h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .intro h1 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .about-wrapper {
+        padding: 44px 48px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .skill-wrapper {
+        border: none;
+        padding: 0;
+    }
+
+    .skill-card img {
+        height: 36px;
+    }
+
+    .skill-card p {
+        font-size: 16px;
+    }
+
+    .contact-wrapper {
+        padding: 44px 48px;
+    }
+
+    .contact-wrapper p {
+        margin-bottom: 32px;
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .form-wrapper {
+        padding: 0;
+        border-radius: 16px;
+        border: none;
+    }
+
+    footer {
+        padding: 12px;
+    }
+}

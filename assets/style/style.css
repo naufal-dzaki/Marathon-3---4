@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(#3e5e5b, #2f3e46);
+    background-repeat: no-repeat;
+    color: rgb(202, 210, 197);
+}
+  
+/* styling scrollbar  */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-image: radial-gradient(#3e5e5b, #2f3e46);
+  background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #446461;
+  border-radius: 999px;
+}
+
+.nav-wrapper {
+    display: inline;
+}
+ 
+.nav-container {
+  width: 100vw;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, .05);
+}
+ 
+.nav-container ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+ 
+.nav-container li {
+  list-style-type: none;
+}
+ 
+.nav-container a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(132, 169, 140)
+}
+ 
+.nav-container a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 4rem;
+    margin-top: 70px;
+    padding: 60px;
+}
+
+.avatar {
+    order: 1;
+}
+
+.avatar img {
+    width: 18rem;
+}
+
+.intro {
+    display: block;
+}
+
+.intro h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.intro h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro h1 .name {
+    color: rgb(132, 169, 140);
+}
+
+.about-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    padding: 60px 64px;
+}
+
+.about-container {
+    flex: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(132, 169, 140);
+    color:rgb(132, 169, 140);
+    width: fit-content;
+}
+
+.about-container img {
+    width: 14rem;
+    border-radius: 8px;
+    align-self: center;
+}
+
+.skill-wrapper {
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.skill-wrapper .title {
+    margin: 0 0 20px 0;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 8px;
+    padding: 8px;
+    column-gap: 8px;
+}
+
+.skill-card img {
+    height: 44px;
+    object-fit: cover;
+}
+
+.skill-card p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 64px;
+}
+
+.contact-wrapper .title {
+    margin-bottom: 16px;
+}
+
+.contact-wrapper p {
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 20px;
+}
+
+.form-wrapper label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(132, 169, 140);
+}
+
+.form-wrapper input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+    color: rgb(202, 210, 197);
+}
+
+.form-wrapper input:focus {
+    outline: 1px solid rgb(82, 121, 111);
+}
+
+.form-wrapper textarea {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 8px;
+    color: rgb(202, 210, 197);
+    margin-bottom: 24px;
+}
+
+.form-wrapper textarea:focus {
+    outline: 1px solid rgb(82, 121, 111);
+}
+
+.form-wrapper input[type='submit'] {
+    background: rgb(132, 169, 140);
+    color: rgb(47, 62, 70);
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.form-wrapper input[type='submit']:hover {
+    background: rgb(82, 121, 111);
+}
+
+.form-wrapper input[type='submit']:focus {
+    outline: 1px solid rgb(132, 169, 140);
+}
+
+footer {
+    padding: 20px 64px;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+}
